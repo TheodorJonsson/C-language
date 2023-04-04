@@ -1,0 +1,293 @@
+\hypertarget{group__list}{}\doxysection{my list}
+\label{group__list}\index{my list@{my list}}
+
+
+specification of a list  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structnode}{node}}
+\begin{DoxyCompactList}\small\item\em the type for a node in the list. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structlist}{list}}
+\begin{DoxyCompactList}\small\item\em the type for a list. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structlist__pos}{list\+\_\+pos}}
+\begin{DoxyCompactList}\small\item\em the type for a list position \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structlist}{list}} \mbox{\hyperlink{group__list_gaa89b8bc105d9a09d4e7c06e8b34078a7}{List}}
+\begin{DoxyCompactList}\small\item\em the type for a list. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structlist__pos}{list\+\_\+pos}} \mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}}
+\begin{DoxyCompactList}\small\item\em the type for a list position \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__list_gaa89b8bc105d9a09d4e7c06e8b34078a7}{List}} $\ast$ \mbox{\hyperlink{group__list_ga8668cbe6c584fe11e610d2895f0f16c7}{list\+\_\+create}} (void)
+\begin{DoxyCompactList}\small\item\em Creates a empty list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__list_ga1dc24d1b157b58dbe757afcb5bcc1991}{list\+\_\+destroy}} (\mbox{\hyperlink{group__list_gaa89b8bc105d9a09d4e7c06e8b34078a7}{List}} $\ast$lst)
+\begin{DoxyCompactList}\small\item\em Deallocates the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__list_gacc4a08770f6d05193738220f017e3340}{list\+\_\+is\+\_\+empty}} (const \mbox{\hyperlink{group__list_gaa89b8bc105d9a09d4e7c06e8b34078a7}{List}} $\ast$lst)
+\begin{DoxyCompactList}\small\item\em frees the memory of the list \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} \mbox{\hyperlink{group__list_ga3ae178d376dde7a3af32166272b0ed89}{list\+\_\+first}} (\mbox{\hyperlink{group__list_gaa89b8bc105d9a09d4e7c06e8b34078a7}{List}} $\ast$lst)
+\begin{DoxyCompactList}\small\item\em Get the position of the first element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} \mbox{\hyperlink{group__list_ga036e6dbe5c11813a27588c63fe5f4993}{list\+\_\+end}} (\mbox{\hyperlink{group__list_gaa89b8bc105d9a09d4e7c06e8b34078a7}{List}} $\ast$lst)
+\begin{DoxyCompactList}\small\item\em Get the position after the last element. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__list_gae95ac421290b72f4391632e074838b06}{list\+\_\+pos\+\_\+equal}} (\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} p1, \mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} p2)
+\begin{DoxyCompactList}\small\item\em Check equality between two positions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} \mbox{\hyperlink{group__list_ga84c7aa01487b5bbfffe98ace96db33d5}{list\+\_\+next}} (\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} pos)
+\begin{DoxyCompactList}\small\item\em Forward to the next position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} \mbox{\hyperlink{group__list_gafba334d3cb5b239cf649d321411a04fc}{list\+\_\+prev}} (\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} pos)
+\begin{DoxyCompactList}\small\item\em Backward to the previous position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} \mbox{\hyperlink{group__list_gae700e4c3be5b5107302582ecaf432048}{list\+\_\+insert}} (\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} pos, const char $\ast$value)
+\begin{DoxyCompactList}\small\item\em Insert the value before the position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} \mbox{\hyperlink{group__list_ga03b0695becb379c4ba22790271a6302b}{list\+\_\+remove}} (\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} pos)
+\begin{DoxyCompactList}\small\item\em Remove the value at the position. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{group__list_gaa804370c75e893d6477e92dd340950f2}{list\+\_\+inspect}} (\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} pos)
+\begin{DoxyCompactList}\small\item\em Get the value at the position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+specification of a list 
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{group__list_gaa89b8bc105d9a09d4e7c06e8b34078a7}\label{group__list_gaa89b8bc105d9a09d4e7c06e8b34078a7}} 
+\index{my list@{my list}!List@{List}}
+\index{List@{List}!my list@{my list}}
+\doxysubsubsection{\texorpdfstring{List}{List}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structlist}{list}} \mbox{\hyperlink{group__list_gaa89b8bc105d9a09d4e7c06e8b34078a7}{List}}}
+
+
+
+the type for a list. 
+
+head is a struct node. \mbox{\Hypertarget{group__list_ga24eff4060ed9e49865d714819e4de7fe}\label{group__list_ga24eff4060ed9e49865d714819e4de7fe}} 
+\index{my list@{my list}!ListPos@{ListPos}}
+\index{ListPos@{ListPos}!my list@{my list}}
+\doxysubsubsection{\texorpdfstring{ListPos}{ListPos}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structlist__pos}{list\+\_\+pos}} \mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}}}
+
+
+
+the type for a list position 
+
+$\ast$node is a pointer to a node. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__list_ga8668cbe6c584fe11e610d2895f0f16c7}\label{group__list_ga8668cbe6c584fe11e610d2895f0f16c7}} 
+\index{my list@{my list}!list\_create@{list\_create}}
+\index{list\_create@{list\_create}!my list@{my list}}
+\doxysubsubsection{\texorpdfstring{list\_create()}{list\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__list_gaa89b8bc105d9a09d4e7c06e8b34078a7}{List}} $\ast$ list\+\_\+create (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Creates a empty list. 
+
+Allocates the memory for a List head Then points the head to itself and nulls the value of the head
+
+
+\begin{DoxyParams}{Parameters}
+{\em -\/} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+empty list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__list_ga1dc24d1b157b58dbe757afcb5bcc1991}\label{group__list_ga1dc24d1b157b58dbe757afcb5bcc1991}} 
+\index{my list@{my list}!list\_destroy@{list\_destroy}}
+\index{list\_destroy@{list\_destroy}!my list@{my list}}
+\doxysubsubsection{\texorpdfstring{list\_destroy()}{list\_destroy()}}
+{\footnotesize\ttfamily void list\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__list_gaa89b8bc105d9a09d4e7c06e8b34078a7}{List}} $\ast$}]{lst }\end{DoxyParamCaption})}
+
+
+
+Deallocates the list. 
+
+Checks if the list has any values if any values deallocate them first then deallocates the list
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$lst,a} & pointer to a List.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__list_ga036e6dbe5c11813a27588c63fe5f4993}\label{group__list_ga036e6dbe5c11813a27588c63fe5f4993}} 
+\index{my list@{my list}!list\_end@{list\_end}}
+\index{list\_end@{list\_end}!my list@{my list}}
+\doxysubsubsection{\texorpdfstring{list\_end()}{list\_end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} list\+\_\+end (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__list_gaa89b8bc105d9a09d4e7c06e8b34078a7}{List}} $\ast$}]{lst }\end{DoxyParamCaption})}
+
+
+
+Get the position after the last element. 
+
+Given a list and creating a new List\+Pos using the head of the list to assign its value to the newly created List\+Pos
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$lst,a} & pointer to a List.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pos, the head of the list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__list_ga3ae178d376dde7a3af32166272b0ed89}\label{group__list_ga3ae178d376dde7a3af32166272b0ed89}} 
+\index{my list@{my list}!list\_first@{list\_first}}
+\index{list\_first@{list\_first}!my list@{my list}}
+\doxysubsubsection{\texorpdfstring{list\_first()}{list\_first()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} list\+\_\+first (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__list_gaa89b8bc105d9a09d4e7c06e8b34078a7}{List}} $\ast$}]{lst }\end{DoxyParamCaption})}
+
+
+
+Get the position of the first element. 
+
+Given a list and creating a new List\+Pos pos using the head of the list to assign its next value to the newly created List\+Pos
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$lst,a} & pointer to a List.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pos, the first element in the list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__list_gae700e4c3be5b5107302582ecaf432048}\label{group__list_gae700e4c3be5b5107302582ecaf432048}} 
+\index{my list@{my list}!list\_insert@{list\_insert}}
+\index{list\_insert@{list\_insert}!my list@{my list}}
+\doxysubsubsection{\texorpdfstring{list\_insert()}{list\_insert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} list\+\_\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}}}]{pos,  }\item[{const char $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Insert the value before the position. 
+
+Given a element and a value, creates a new node using a internal function then creates two other nodes to hold the position of the given position. Links the node to the given positions
+
+
+\begin{DoxyParams}{Parameters}
+{\em List\+Pos} & pos, the position of the list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pos, position of the new element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__list_gaa804370c75e893d6477e92dd340950f2}\label{group__list_gaa804370c75e893d6477e92dd340950f2}} 
+\index{my list@{my list}!list\_inspect@{list\_inspect}}
+\index{list\_inspect@{list\_inspect}!my list@{my list}}
+\doxysubsubsection{\texorpdfstring{list\_inspect()}{list\_inspect()}}
+{\footnotesize\ttfamily const char $\ast$ list\+\_\+inspect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Get the value at the position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em List\+Pos} & pos, the position of the list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pos.\+node-\/\texorpdfstring{$>$}{>}value, the char of the given element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__list_gacc4a08770f6d05193738220f017e3340}\label{group__list_gacc4a08770f6d05193738220f017e3340}} 
+\index{my list@{my list}!list\_is\_empty@{list\_is\_empty}}
+\index{list\_is\_empty@{list\_is\_empty}!my list@{my list}}
+\doxysubsubsection{\texorpdfstring{list\_is\_empty()}{list\_is\_empty()}}
+{\footnotesize\ttfamily bool list\+\_\+is\+\_\+empty (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{group__list_gaa89b8bc105d9a09d4e7c06e8b34078a7}{List}} $\ast$}]{lst }\end{DoxyParamCaption})}
+
+
+
+frees the memory of the list 
+
+Goes through the list from start to end and removes the values in each nodes until there is only the head left. Then it frees the memory of the list 
+\begin{DoxyParams}{Parameters}
+{\em $\ast$lst,a} & pointer to a constant List.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__list_ga84c7aa01487b5bbfffe98ace96db33d5}\label{group__list_ga84c7aa01487b5bbfffe98ace96db33d5}} 
+\index{my list@{my list}!list\_next@{list\_next}}
+\index{list\_next@{list\_next}!my list@{my list}}
+\doxysubsubsection{\texorpdfstring{list\_next()}{list\_next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} list\+\_\+next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Forward to the next position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em List\+Pos} & pos, the position of the list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pos, position of the next element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__list_gae95ac421290b72f4391632e074838b06}\label{group__list_gae95ac421290b72f4391632e074838b06}} 
+\index{my list@{my list}!list\_pos\_equal@{list\_pos\_equal}}
+\index{list\_pos\_equal@{list\_pos\_equal}!my list@{my list}}
+\doxysubsubsection{\texorpdfstring{list\_pos\_equal()}{list\_pos\_equal()}}
+{\footnotesize\ttfamily bool list\+\_\+pos\+\_\+equal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}}}]{p1,  }\item[{\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}}}]{p2 }\end{DoxyParamCaption})}
+
+
+
+Check equality between two positions. 
+
+Given two positions and checking if these two nodes are equal
+
+
+\begin{DoxyParams}{Parameters}
+{\em List\+Pos} & p1. \\
+\hline
+{\em List\+Pos} & p2.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__list_gafba334d3cb5b239cf649d321411a04fc}\label{group__list_gafba334d3cb5b239cf649d321411a04fc}} 
+\index{my list@{my list}!list\_prev@{list\_prev}}
+\index{list\_prev@{list\_prev}!my list@{my list}}
+\doxysubsubsection{\texorpdfstring{list\_prev()}{list\_prev()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} list\+\_\+prev (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Backward to the previous position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em List\+Pos} & pos, the position of the list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pos, position of the previous element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__list_ga03b0695becb379c4ba22790271a6302b}\label{group__list_ga03b0695becb379c4ba22790271a6302b}} 
+\index{my list@{my list}!list\_remove@{list\_remove}}
+\index{list\_remove@{list\_remove}!my list@{my list}}
+\doxysubsubsection{\texorpdfstring{list\_remove()}{list\_remove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}} list\+\_\+remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{List\+Pos}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Remove the value at the position. 
+
+Saves the pointers of the given element to new nodes. Unlinks the given element and the frees the vlue of the element then frees the element aswell
+
+
+\begin{DoxyParams}{Parameters}
+{\em List\+Pos} & pos, the position of the list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pos, position of the next element 
+\end{DoxyReturn}

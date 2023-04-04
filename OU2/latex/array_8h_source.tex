@@ -1,0 +1,33 @@
+\hypertarget{array_8h_source}{}\doxysection{array.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ARRAY\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ARRAY\_H}}
+\DoxyCodeLine{24 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structarray}{array}}}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} n1;}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} n2;}
+\DoxyCodeLine{28     \textcolor{keywordtype}{int} *data;}
+\DoxyCodeLine{29 \} \mbox{\hyperlink{group__array_ga81a170ae533cb9bef7883f1631dc8587}{Array}};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{comment}{// Create and return a zero array of size n1 rows by n2 columns.}}
+\DoxyCodeLine{46 \textcolor{comment}{}\mbox{\hyperlink{structarray}{Array}} *\mbox{\hyperlink{group__array_ga1a52d28f3327ed949b67208f73cac1f8}{array\_create}}(\textcolor{keywordtype}{int} n1, \textcolor{keywordtype}{int} n2);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{comment}{// Destroy an array.}}
+\DoxyCodeLine{58 \textcolor{comment}{}\textcolor{keywordtype}{void} \mbox{\hyperlink{group__array_ga8fed7dbcadbf201a918507ac5ccbaafb}{array\_destroy}}(\mbox{\hyperlink{structarray}{Array}} *arr);}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 \textcolor{comment}{// Get the number of rows.}}
+\DoxyCodeLine{68 \textcolor{comment}{}\textcolor{keywordtype}{int} \mbox{\hyperlink{group__array_ga1125ea62ec2794a2390775feb597c899}{array\_rows}}(\textcolor{keyword}{const} \mbox{\hyperlink{structarray}{Array}} *arr);}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 \textcolor{comment}{// Get the number of columns.}}
+\DoxyCodeLine{80 \textcolor{comment}{}\textcolor{keywordtype}{int} \mbox{\hyperlink{group__array_ga3082612bcf8a78bf2cd07641bcb663c7}{array\_columns}}(\textcolor{keyword}{const} \mbox{\hyperlink{structarray}{Array}} *arr);}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 \textcolor{comment}{// Return the value at row i1 and column i2 (zero-\/based indexing).}}
+\DoxyCodeLine{91 \textcolor{comment}{}\textcolor{keywordtype}{int} \mbox{\hyperlink{group__array_ga2800f7b46978d071b177d78a32a45373}{array\_get}}(\textcolor{keyword}{const} \mbox{\hyperlink{structarray}{Array}} *arr, \textcolor{keywordtype}{int} i1, \textcolor{keywordtype}{int} i2);}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 \textcolor{comment}{// Set the value at row i1 and column i2 (zero-\/based indexing).}}
+\DoxyCodeLine{101 \textcolor{comment}{}\textcolor{keywordtype}{void} \mbox{\hyperlink{group__array_gab045ec4a2bf8b3158d236c4ffea8fece}{array\_set}}(\mbox{\hyperlink{structarray}{Array}} *arr, \textcolor{keywordtype}{int} i1, \textcolor{keywordtype}{int} i2, \textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{106 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* ARRAY\_H */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

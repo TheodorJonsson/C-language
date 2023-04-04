@@ -1,0 +1,59 @@
+\hypertarget{list_8h_source}{}\doxysection{list.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef LIST\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define LIST\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{21 \textcolor{keyword}{struct }\mbox{\hyperlink{structnode}{node}}}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23   \textcolor{keyword}{struct }\mbox{\hyperlink{structnode}{node}} *next;}
+\DoxyCodeLine{24   \textcolor{keyword}{struct }\mbox{\hyperlink{structnode}{node}} *prev;}
+\DoxyCodeLine{25   \textcolor{keywordtype}{char} *value;}
+\DoxyCodeLine{26 \};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{33 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structlist}{list}}}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35   \textcolor{keyword}{struct }\mbox{\hyperlink{structnode}{node}} head;}
+\DoxyCodeLine{36 \} \mbox{\hyperlink{group__list_gaa89b8bc105d9a09d4e7c06e8b34078a7}{List}};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{43 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structlist__pos}{list\_pos}}}
+\DoxyCodeLine{44 \{}
+\DoxyCodeLine{45   \textcolor{keyword}{struct }\mbox{\hyperlink{structnode}{node}} *\mbox{\hyperlink{structnode}{node}};}
+\DoxyCodeLine{46 \} \mbox{\hyperlink{group__list_ga24eff4060ed9e49865d714819e4de7fe}{ListPos}};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{59 \mbox{\hyperlink{structlist}{List}} *\mbox{\hyperlink{group__list_ga8668cbe6c584fe11e610d2895f0f16c7}{list\_create}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 }
+\DoxyCodeLine{73 \textcolor{keywordtype}{void} \mbox{\hyperlink{group__list_ga1dc24d1b157b58dbe757afcb5bcc1991}{list\_destroy}}(\mbox{\hyperlink{structlist}{List}} *lst);}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 }
+\DoxyCodeLine{87 \textcolor{keywordtype}{bool} \mbox{\hyperlink{group__list_gacc4a08770f6d05193738220f017e3340}{list\_is\_empty}}(\textcolor{keyword}{const} \mbox{\hyperlink{structlist}{List}} *lst);}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89 }
+\DoxyCodeLine{101 \mbox{\hyperlink{structlist__pos}{ListPos}} \mbox{\hyperlink{group__list_ga3ae178d376dde7a3af32166272b0ed89}{list\_first}}(\mbox{\hyperlink{structlist}{List}} *lst);}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103 }
+\DoxyCodeLine{115 \mbox{\hyperlink{structlist__pos}{ListPos}} \mbox{\hyperlink{group__list_ga036e6dbe5c11813a27588c63fe5f4993}{list\_end}}(\mbox{\hyperlink{structlist}{List}} *lst);}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117 }
+\DoxyCodeLine{129 \textcolor{keywordtype}{bool} \mbox{\hyperlink{group__list_gae95ac421290b72f4391632e074838b06}{list\_pos\_equal}}(\mbox{\hyperlink{structlist__pos}{ListPos}} p1, \mbox{\hyperlink{structlist__pos}{ListPos}} p2);}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131 }
+\DoxyCodeLine{142 \mbox{\hyperlink{structlist__pos}{ListPos}} \mbox{\hyperlink{group__list_ga84c7aa01487b5bbfffe98ace96db33d5}{list\_next}}(\mbox{\hyperlink{structlist__pos}{ListPos}} pos);}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144 \textcolor{comment}{// Backward to the previous position.}}
+\DoxyCodeLine{155 \textcolor{comment}{}\mbox{\hyperlink{structlist__pos}{ListPos}} \mbox{\hyperlink{group__list_gafba334d3cb5b239cf649d321411a04fc}{list\_prev}}(\mbox{\hyperlink{structlist__pos}{ListPos}} pos);}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{157 }
+\DoxyCodeLine{169 \mbox{\hyperlink{structlist__pos}{ListPos}} \mbox{\hyperlink{group__list_gae700e4c3be5b5107302582ecaf432048}{list\_insert}}(\mbox{\hyperlink{structlist__pos}{ListPos}} pos, \textcolor{keyword}{const} \textcolor{keywordtype}{char} *value);}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{171 }
+\DoxyCodeLine{183 \mbox{\hyperlink{structlist__pos}{ListPos}} \mbox{\hyperlink{group__list_ga03b0695becb379c4ba22790271a6302b}{list\_remove}}(\mbox{\hyperlink{structlist__pos}{ListPos}} pos);}
+\DoxyCodeLine{184 }
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186 \textcolor{comment}{// Get the value of at the position.}}
+\DoxyCodeLine{195 \textcolor{comment}{}\textcolor{keyword}{const} \textcolor{keywordtype}{char} *\mbox{\hyperlink{group__list_gaa804370c75e893d6477e92dd340950f2}{list\_inspect}}(\mbox{\hyperlink{structlist__pos}{ListPos}} pos);}
+\DoxyCodeLine{200 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* LIST\_H */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

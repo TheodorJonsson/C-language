@@ -1,0 +1,10 @@
+CC = gcc
+CFLAGS = -g -std=gnu11 -Wall -Wextra -Wpedantic -Wmissing-declarations -Wmissing-prototypes -Wold-style-definition -Werror -c
+PFLAGS = -lm -pthread -o
+
+mdu: mdu.o util.o
+	$(CC) $(PFLAGS) mdu mdu.o util.o
+mdu.o: mdu.c mdu.h util.o
+	$(CC) $(CFLAGS) mdu.c  
+util.o: util.c util.h
+	$(CC) $(CFLAGS) util.c 

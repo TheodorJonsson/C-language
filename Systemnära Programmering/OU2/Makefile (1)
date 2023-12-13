@@ -1,0 +1,11 @@
+CC = gcc
+CFLAGS = -g -std=gnu11 -Wall -Wextra -Wpedantic -Wmissing-declarations -Wmissing-prototypes -Wold-style-definition -Werror
+
+mmake: mmake.o parser.o
+	$(CC) -o mmake mmake.o parser.o $(CFLAGS)
+mmake.o: mmake.c mmake.h
+	$(CC) -c mmake.c $(CFLAGS)
+parser: parser.o
+	$(CC) -o parser parser.o $(CFLAGS)
+parser.o: parser.c parser.h
+	$(CC) -c parser.c $(CLAGS)
